@@ -7,7 +7,7 @@ import { AxiosError } from "axios";
 import CountryDetails from "./Main/CountryDetails";
 
 const SearchAndDisplay = () => {
-  /* We shouldn't use any in real world, this is just for readability,
+  /* We shouldn't use any as type in real world, this is just for readability,
   otherwise I have to import complex type definitions from this lib */
   const [options, setOptions] = useState<any>();
   const [selectedOption, setSelectedOption] = useState<SingleValue<Option>>();

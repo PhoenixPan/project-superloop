@@ -6,8 +6,6 @@ import useScreenQuery from "../utils/useScreenQuery";
 const CountryDetails = ({ data }: Props) => {
   const { isSmall } = useScreenQuery();
 
-  Object.entries(data.currencies).map((e) => console.log(e));
-
   return (
     <div>
       <TitleText $isSmallScreen={isSmall}>
