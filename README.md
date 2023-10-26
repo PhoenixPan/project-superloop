@@ -27,3 +27,5 @@ npm run dev
 - I used `styled-component` instead of any UI library for styling, which can reflect some CSS skills. Here, I created a useScreenQuery hook to check the current screen size so I can update the page responsively. I personally like to use the auto layout of `flex`, to avoid changing everything manually.
 
 * I used `vite` just for fun. It's super quick to run, especially work with `pnpm`. `create-react-app` is still used in most cases.
+
+* Try "Kiribati" for showing multiple currencies.

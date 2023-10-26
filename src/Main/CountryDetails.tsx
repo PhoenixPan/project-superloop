@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { CountryData } from "../SeatchAndDisplay";
+import { CountryData } from "./SeatchAndDisplay";
 import useScreenQuery from "../utils/useScreenQuery";
 
 const CountryDetails = ({ data }: Props) => {

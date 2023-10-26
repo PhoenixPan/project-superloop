@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import SearchAndDisplay from "../SeatchAndDisplay";
+import SearchAndDisplay from "./SeatchAndDisplay";
 import Banner from "./Banner";
 
 const Main = () => {

@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 import Select, { SingleValue } from "react-select";
 import { debounce } from "lodash/fp";
 
-import { fetchCountriesByName } from "./apis/country";
+import { fetchCountriesByName } from "../apis/country";
 import { AxiosError } from "axios";
-import CountryDetails from "./Main/CountryDetails";
+import CountryDetails from "./CountryDetails";
 
 const SearchAndDisplay = () => {
   /* We shouldn't use any as type in real world, this is just for readability,
