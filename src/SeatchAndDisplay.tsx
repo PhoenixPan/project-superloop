@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 import Select, { SingleValue } from "react-select";
 import { debounce } from "lodash/fp";
 
-import { fetchCountriesByName } from "./apis";
+import { fetchCountriesByName } from "./apis/country";
 import { AxiosError } from "axios";
-import CountryDetails from "./CountryDetails";
+import CountryDetails from "./Main/CountryDetails";
 
 const SearchAndDisplay = () => {
   /* We shouldn't use any in real world, this is just for readability,
@@ -86,7 +86,7 @@ export type CountryData = {
     png?: string;
     svg?: string;
   };
-  currencies: Array<Currency>;
+  currencies: { [key: string]: Currency };
   flags: {
     alt?: string;
     png?: string;
@@ -100,5 +100,6 @@ export type CountryData = {
 };
 
 type Currency = {
-  [name: string]: { name: string; symbol: string };
+  name: string;
+  symbol: string;
 };
